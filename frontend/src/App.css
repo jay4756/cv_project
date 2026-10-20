@@ -1,0 +1,378 @@
+.app-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 20px 56px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.brand-mark {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #d67d68, #f5efe8);
+  color: #1d1717;
+  font-weight: 800;
+}
+
+.brand small {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #8b7d7c;
+}
+
+.brand h2 {
+  margin: 4px 0 0;
+  font-size: 1.25rem;
+  color: #1f1a1a;
+}
+
+.upload-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: #1f1a1a;
+  color: #fff;
+  padding: 12px 18px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 12px 32px rgba(31, 26, 26, 0.12);
+}
+
+.upload-btn input {
+  display: none;
+}
+
+.camera-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(31, 26, 26, 0.18);
+  border-radius: 999px;
+  background: #fff;
+  color: #1f1a1a;
+  padding: 11px 17px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.camera-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 20px;
+  padding: 26px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(27, 22, 22, 0.08);
+  box-shadow: 0 18px 45px rgba(60, 40, 32, 0.06);
+}
+
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pill {
+  display: inline-block;
+  width: fit-content;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(214, 125, 104, 0.1);
+  color: #9d5449;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.hero-copy h1 {
+  margin: 18px 0 12px;
+  font-size: clamp(2.5rem, 6vw, 4.4rem);
+  line-height: 0.96;
+  letter-spacing: -0.06em;
+  color: #201b1b;
+}
+
+.hero-copy p {
+  margin: 0;
+  max-width: 560px;
+  font-size: 1.02rem;
+  line-height: 1.7;
+  color: #544d4b;
+}
+
+.photo-box {
+  min-height: 300px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #f7eee9, #efe3dc);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.photo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.placeholder {
+  color: #7a625e;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.panel-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 20px;
+}
+
+.panel {
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(35, 28, 28, 0.08);
+  border-radius: 24px;
+  padding: 22px;
+}
+
+.panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.panel-head h3 {
+  margin: 0;
+  color: #1f1a1a;
+}
+
+.panel-head span {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(31, 26, 26, 0.05);
+  color: #4a4141;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.color-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.color-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(33, 28, 28, 0.03);
+  border-radius: 14px;
+  padding: 10px 12px;
+}
+
+.swatch {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  border: 1px solid rgba(31, 26, 26, 0.08);
+}
+
+.values {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(120px, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.values div {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.values label {
+  display: block;
+  margin-bottom: 6px;
+  color: #7a695f;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.values strong {
+  color: #1f1a1a;
+}
+
+.tip-box {
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(214, 125, 104, 0.12), rgba(245, 213, 176, 0.14));
+  color: #342a29;
+  line-height: 1.6;
+}
+
+.tip-box p {
+  margin: 0;
+}
+
+.matches {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #443a3a;
+}
+
+.matches li {
+  position: relative;
+  padding-left: 18px;
+}
+
+.matches li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #d67d68;
+}
+
+.loader {
+  margin-top: 10px;
+  text-align: center;
+  color: #5a4845;
+  font-weight: 600;
+}
+
+.camera-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(23, 20, 19, 0.72);
+}
+
+.camera-dialog {
+  width: min(100%, 680px);
+  padding: 20px;
+  border-radius: 18px;
+  background: #fbf8f5;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.3);
+}
+
+.camera-dialog-head,
+.camera-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.camera-dialog-head {
+  margin-bottom: 14px;
+}
+
+.camera-dialog-head h2 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.camera-close {
+  border: 0;
+  background: transparent;
+  color: #5a4845;
+  padding: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.camera-dialog video,
+.camera-status {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 12px;
+  background: #211f1d;
+}
+
+.camera-dialog video {
+  object-fit: cover;
+}
+
+.camera-status {
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  color: #fff;
+  text-align: center;
+}
+
+.camera-error {
+  margin: 12px 0 0;
+  color: #a13f32;
+}
+
+.camera-actions {
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+@media (max-width: 860px) {
+  .hero,
+  .panel-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  .brand {
+    grid-column: 1 / -1;
+  }
+
+  .topbar > .upload-btn,
+  .topbar > .camera-btn {
+    width: 100%;
+  }
+
+  .camera-dialog {
+    padding: 16px;
+  }
+}
